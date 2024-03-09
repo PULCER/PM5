@@ -131,6 +131,7 @@ struct ContentView: View {
                         addInitiative()
                     }) {
                         Text("Add Initiative")
+                            .padding()
                             .frame(maxWidth: .infinity)
                             .background(Color.blue.opacity(0.4))
                             .foregroundColor(.white)
