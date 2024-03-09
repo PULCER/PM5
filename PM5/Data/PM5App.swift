@@ -1,21 +1,17 @@
-//
-//  PM5App.swift
-//  PM5
-//
-//  Created by Anthony Howell on 3/8/24.
-//
-
 import SwiftUI
 import SwiftData
 
 @main
-struct PM5App: App {
+struct Product_Manager_5App: App {
+    
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            Initiative.self,
+            InitiativeNote.self,
+            InitiativeTask.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
+        
         do {
             return try ModelContainer(for: schema, configurations: [modelConfiguration])
         } catch {
