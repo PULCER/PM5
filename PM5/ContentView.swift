@@ -34,7 +34,6 @@ struct ContentView: View {
                                 Toggle(isOn: $showCompleted) {
                                 }
                                 .toggleStyle(SwitchToggleStyle(tint: .blue))
-                                .padding()
                             }
                             ScrollView(.horizontal) {
                                 HStack {
@@ -49,7 +48,7 @@ struct ContentView: View {
                                 }
                             }
                             
-                            Divider().padding()
+                            Divider()
                             
                             HStack {
                                 Text("High")
@@ -69,7 +68,7 @@ struct ContentView: View {
                                 }
                             }
                             
-                            Divider().padding()
+                            Divider()
                             
                             HStack {
                                 Text("Medium")
@@ -89,7 +88,7 @@ struct ContentView: View {
                                 }
                             }
                             
-                            Divider().padding()
+                            Divider()
                             
                             HStack {
                                 Text("Low")
@@ -133,7 +132,6 @@ struct ContentView: View {
                     }) {
                         Text("Add Initiative")
                             .frame(maxWidth: .infinity)
-                            .padding()
                             .background(Color.blue.opacity(0.4))
                             .foregroundColor(.white)
                             .font(.headline)
