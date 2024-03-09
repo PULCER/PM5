@@ -167,35 +167,37 @@ struct InitiativeDetailView: View {
                         .cornerRadius(10)
                 }
                 .buttonStyle(PlainButtonStyle())
-                
-                Button(action: {
-                    showingDeleteConfirmation = true
-                }) {
-                    Text("Delete")
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .font(.title2)
-                        .background(Color.red.opacity(0.4))
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
-                }
-                .buttonStyle(PlainButtonStyle())
-                
-                Button(action: {
-                    updateInitiativeDetails()
-                    try? modelContext.save()
-                    self.selectedInitiative = nil
-                }) {
-                    Text("Back")
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .font(.title2)
-                        .background(Color.teal.opacity(0.4))
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
-                }
-                .buttonStyle(PlainButtonStyle())
             }
+                
+                HStack{
+                    Button(action: {
+                        showingDeleteConfirmation = true
+                    }) {
+                        Text("Delete")
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .font(.title2)
+                            .background(Color.red.opacity(0.4))
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                    }
+                    .buttonStyle(PlainButtonStyle())
+                    
+                    Button(action: {
+                        updateInitiativeDetails()
+                        try? modelContext.save()
+                        self.selectedInitiative = nil
+                    }) {
+                        Text("Back")
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .font(.title2)
+                            .background(Color.teal.opacity(0.4))
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                    }
+                    .buttonStyle(PlainButtonStyle())
+                }
         }
         .sheet(isPresented: $showingAddTaskModal) {
             TaskView(initiative: initiative)
