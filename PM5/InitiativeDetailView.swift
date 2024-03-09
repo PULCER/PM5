@@ -34,11 +34,10 @@ struct InitiativeDetailView: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 
                 Toggle(isOn: $isCompleted) {
-                    Text(isCompleted ? "Complete" : "Incomplete")
-                        .font(.subheadline)
-                        .foregroundColor(.secondary)
                 }
                 .toggleStyle(SwitchToggleStyle(tint: .blue))
+                .padding()
+
             }
             
             TextEditor(text: $editedSummary)

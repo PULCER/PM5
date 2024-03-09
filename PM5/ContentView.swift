@@ -32,11 +32,9 @@ struct ContentView: View {
                                     .font(.title)
                                 Spacer()
                                 Toggle(isOn: $showCompleted) {
-                                    Text(showCompleted ? "Complete" : "Incomplete")
-                                        .font(.subheadline)
-                                        .foregroundColor(.secondary)
                                 }
                                 .toggleStyle(SwitchToggleStyle(tint: .blue))
+                                .padding()
                             }
                             ScrollView(.horizontal) {
                                 HStack {
