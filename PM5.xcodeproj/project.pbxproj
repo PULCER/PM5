@@ -34,6 +34,7 @@
 		430743E92B9BE5FB0070FBDC /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
 		430743EB2B9BE6100070FBDC /* LinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
 		4367FCE62B9BF8B200AF22F1 /* PM5.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PM5.entitlements; sourceTree = "<group>"; };
+		43DEB6352BDEFC770055EAD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +67,7 @@
 		430743CF2B9BE5280070FBDC /* PM5 */ = {
 			isa = PBXGroup;
 			children = (
+				43DEB6352BDEFC770055EAD3 /* Info.plist */,
 				4367FCE62B9BF8B200AF22F1 /* PM5.entitlements */,
 				430743D22B9BE5280070FBDC /* ContentView.swift */,
 				430743E32B9BE5B80070FBDC /* InitiativeDetailView.swift */,
@@ -317,12 +319,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = PM5/PM5.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"PM5/Preview Content\"";
 				DEVELOPMENT_TEAM = 5BB8VQ988Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Product Manager 5";
+				INFOPLIST_FILE = PM5/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PM5;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -334,7 +337,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.02;
 				PRODUCT_BUNDLE_IDENTIFIER = "pulcer.net.Product-Manager-5";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -354,12 +357,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = PM5/PM5.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"PM5/Preview Content\"";
 				DEVELOPMENT_TEAM = 5BB8VQ988Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Product Manager 5";
+				INFOPLIST_FILE = PM5/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PM5;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -371,7 +375,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.02;
 				PRODUCT_BUNDLE_IDENTIFIER = "pulcer.net.Product-Manager-5";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
